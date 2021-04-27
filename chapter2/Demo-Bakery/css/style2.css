@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+}
+
+section {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.hero {
+  background-image: url("../images/bread1.jpg");
+  padding-top: 10vh;
+  text-align: center;
+}
