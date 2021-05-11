@@ -1,6 +1,7 @@
 body {
-  background-image:  url(images/bg1.png), url(images/bg2.png);
-  background-position: left top, right top;
+  background-image:  url(images/bg1.png), url(images/bg2.png), url(images/bg1.png);
+  background-position: left bottom, right top, right bottom;
   background-repeat: no-repeat;
+  height: 100vh;
   text-align: center;
 }
