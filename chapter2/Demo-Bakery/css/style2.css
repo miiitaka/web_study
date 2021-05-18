@@ -4,11 +4,18 @@ body {
   margin: 0;
 }
 
+.container {
+  height: 100vh;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+}
+
 section {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 75vh;
+  scroll-snap-align: center;
 }
 
 .hero {
@@ -19,6 +26,13 @@ section {
 
 .title {
   font-family: 'Dancing Script', cursive;
-  font-size: 7rem;
+  font-size: 4rem;
   margin-bottom: 2rem;
 }
+
+@media (min-width: 701px) {
+  .title {
+    font-size: 7rem;
+  }
+}
+
