@@ -580,14 +580,3 @@ DESKTOP SIZE
     color: #fff;
   }
 }
-
-.home-hero {
-  opacity: 0;
-  transform: translateX(50px);
-}
-
-.home-hero.tx {
-  opacity: 1;
-  transform: translateX(0);
-  transition: all 1s;
-}
