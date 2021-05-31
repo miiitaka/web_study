@@ -3,7 +3,24 @@
 html {
   font-size: 62.5%;
 }
-
 body {
-  font-size: 1.2rem;
+  color: #949087;
+  font: sans-serif 1.6rem;
+  background: #faf6ed url("../images/bg.png");
+}
+
+@media (min-width: 600px) {
+  .container {
+    background: #f00;
+    display: flex;
+    justify-content: space-between;
+  }
+  main {
+    background: #00f;
+    width: 68%;
+  }
+  aside {
+    background: #ff0;
+    width: 26%;
+  }
 }
