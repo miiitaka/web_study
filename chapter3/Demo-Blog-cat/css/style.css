@@ -3,10 +3,35 @@
 html {
   font-size: 62.5%;
 }
+
 body {
-  color: #949087;
-  font: sans-serif 1.6rem;
   background: #faf6ed url("../images/bg.png");
+  color: #949087;
+  font: 1.6rem sans-serif;
+}
+
+header {
+  background: url("../images/header.svg") no-repeat center top/cover;
+  height: 170px;
+  margin: 26px auto 0;
+  max-width: 1000px;
+}
+
+.page-title {
+  font: 3.75rem "Amatic SC", cursive;
+  margin: 10px 0;
+  padding-top: 20px;
+}
+
+.page-description {
+  font-size: 14px;
+  margin-bottom: 0;
+  padding: 30px 0 0;
+}
+
+.page-title,
+.page-description {
+  text-align: center;
 }
 
 @media (min-width: 600px) {
