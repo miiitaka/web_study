@@ -1,13 +1,13 @@
 @charset "UTF-8";
 
 html {
-  font-size: 62.5%;
+  font-size: 100%;
 }
 
 body {
   background: #faf6ed url("../images/bg.png");
   color: #949087;
-  font: 1.6rem sans-serif;
+  font-family: sans-serif;
 }
 
 header {
@@ -49,6 +49,53 @@ main {
   background-size: 6px 6px;
   margin-bottom: 15px;
   padding-bottom: 10px;
+}
+
+.post-title h2 {
+  background: #fff;
+  font: 500 1.5rem / 1.5 'M PLUS Rounded 1c', sans-serif;
+  padding: 0 10px 12px;
+}
+
+.post-title a {
+  color: #949087;
+  text-decoration: none;
+}
+
+.post-title a:hover {
+  color: #605c55;
+}
+
+.post-thumb {
+  margin: 0 0 10px 0;
+  position: relative;
+}
+
+.post-date {
+  background: #93d8d0;
+  border-radius: 30% 60% 50% 70% / 50%;
+  color: #fff;
+  font: 1.5rem 'Amatic SC', cursive;
+  height: 80px;
+  left: 0;
+  letter-spacing: 1px;
+  position: absolute;
+  text-align: center;
+  top: -10px;
+  width: 80px;
+}
+
+.post-date span {
+  border-bottom: dotted 2px rgba(255, 255, 255, .5);
+  display: block;
+  font-size: 1rem;
+  margin: 4px auto 0;
+  padding-bottom: 2px;
+  width: 60%;
+}
+
+.post-img {
+  
 }
 
 @media (min-width: 600px) {
