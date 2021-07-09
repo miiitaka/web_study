@@ -95,7 +95,27 @@ main {
 }
 
 .post-img {
+  border-radius: 40% 70% 50% 30% / 50%;
+  height: 260px;
+  object-fit: cover;
+  width: 100%;
+}
 
+.btn a {
+  background: #eda1a1;
+  border: 2px dashed #e38787;
+  border-radius: 5px;
+  box-shadow: 0 0 0 5px #eda1a1;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.btn a:hover {
+  background: #eda1a1;
+  color: #fff;
+  border: 2px dashed #eda1a1;
+  box-shadow: 0 0 0 5px #e38787;
 }
 
 @media (min-width: 600px) {
@@ -109,5 +129,14 @@ main {
   aside {
     background: #ff0;
     width: 26%;
+  }
+  .post-thumb {
+    float: left;
+    margin: 0 3rem 1rem 0;
+    shape-outside: circle();
+  }
+  .post-img {
+    height: 180px;
+    width: 220px;
   }
 }
