@@ -117,6 +117,21 @@ main {
   border: 2px dashed #eda1a1;
   box-shadow: 0 0 0 5px #e38787;
 }
+/*ul li::before {*/
+/*  background: #93d8d0;*/
+/*  border-radius: 50%;*/
+/*  display: inline-block;*/
+/*  content: "";*/
+/*  height: 8px;*/
+/*  margin: 0 8px 2px 0;*/
+/*  width: 8px;*/
+/*}*/
+ul li::before {
+  color: #f00;
+  content: "Q.";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+}
 
 @media (min-width: 600px) {
   .container {
@@ -127,7 +142,6 @@ main {
     width: 68%;
   }
   aside {
-    background: #ff0;
     width: 26%;
   }
   .post-thumb {

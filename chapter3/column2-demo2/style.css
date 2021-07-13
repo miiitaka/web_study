@@ -10,7 +10,11 @@ a::before {
     padding: 0 5px;
 }
 /* 外部リンク */
-a[href^="http://"]::before {
+/*a[href^="http://"]::before {*/
+/*    content: url(images/link.svg);*/
+/*}*/
+/* 外部リンク */
+a[target="_blank"]::after {
     content: url(images/link.svg);
 }
 /* メール */
