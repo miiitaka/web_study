@@ -117,19 +117,37 @@ main {
   border: 2px dashed #eda1a1;
   box-shadow: 0 0 0 5px #e38787;
 }
-/*ul li::before {*/
-/*  background: #93d8d0;*/
-/*  border-radius: 50%;*/
-/*  display: inline-block;*/
-/*  content: "";*/
-/*  height: 8px;*/
-/*  margin: 0 8px 2px 0;*/
-/*  width: 8px;*/
-/*}*/
 ul li::before {
-  color: #f00;
-  content: "Q.";
+  background: #93d8d0;
+  border-radius: 50%;
+  display: inline-block;
+  content: "";
+  height: 8px;
+  margin: 0 8px 2px 0;
+  width: 8px;
+}
+
+.side-box {
+  border: solid 1px #ccc;
+  border-radius: 6px;
+  outline: solid 2px #ccc;
+  outline-offset: 4px;
+  padding: .875rem;
+  position: relative;
+}
+
+.side-box::before {
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: -1rem;
+
+  /* Font */
+  color: #949087;
+  content: "\f1b0";
   font-family: "Font Awesome 5 Pro";
+  font-size: 1.5rem;
   font-weight: 900;
 }
 
