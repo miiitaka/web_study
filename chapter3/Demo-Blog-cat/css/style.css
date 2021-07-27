@@ -10,6 +10,18 @@ body {
   font-family: sans-serif;
 }
 
+p {
+  line-height: 1.6;
+}
+
+.container {
+  background: #fff;
+  border-radius: 0 0 10px 10px;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 1.5rem;
+}
+
 header {
   background: url("../images/header.svg") no-repeat center top/cover;
   height: 170px;
@@ -101,6 +113,11 @@ main {
   width: 100%;
 }
 
+.btn {
+  text-align: right;
+  margin-top: 1rem;
+}
+
 .btn a {
   background: #eda1a1;
   border: 2px dashed #e38787;
@@ -130,6 +147,7 @@ ul li::before {
 .side-box {
   border: solid 1px #ccc;
   border-radius: 6px;
+  margin-bottom: 4rem;
   outline: solid 2px #ccc;
   outline-offset: 4px;
   padding: .875rem;
@@ -149,6 +167,36 @@ ul li::before {
   font-family: "Font Awesome 5 Pro";
   font-size: 1.5rem;
   font-weight: 900;
+}
+
+.newsletter-form {
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+.newsletter-form input[type='email'] {
+  background: #fff;
+  border: 2px solid #ccc;
+  border-radius: 10px 0 0 10px;
+  padding: 1rem;
+  width: 75%;
+}
+
+.newsletter-form input[type='email']::placeholder {
+  color: #ccc;
+}
+
+.newsletter-form input[type='submit'] {
+  background: #eda1a1;
+  border-radius: 0 10px 10px 0;
+  color: #fff;
+  cursor: pointer;
+  margin-left: -5px;
+  padding: 1.1rem;
+}
+
+.newsletter-form input[type='submit']:hover {
+  background: #e38787;
 }
 
 @media (min-width: 600px) {
