@@ -169,6 +169,48 @@ ul li::before {
   font-weight: 900;
 }
 
+.side-box a:hover {
+  color: #7ac69f;
+}
+
+.side-box h3 {
+  font-family: "Amatic SC", cursive;
+  font-size: 1.875rem;
+  letter-spacing: .1rem;
+  margin: .875rem 0 1.125rem;
+  text-align: center;
+}
+
+.side-box li {
+  border-bottom: 1px dashed #ccc;
+  display: flex;
+  padding: 1rem .35rem;
+}
+
+.side-box li:first-child {
+  padding-top: 0;
+}
+
+.side-box li:last-child {
+  border-bottom: 0;
+  padding-bottom: .5rem;
+}
+
+.side-box li::before {
+  background: #93d8d0;
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  height: 8px;
+  margin: 6px 10px 0 0;
+  width: 8px;
+}
+
+.side-box li a {
+  flex: 1;
+  line-height: 1.4;
+}
+
 .newsletter-form {
   display: flex;
   margin-top: 1.5rem;
