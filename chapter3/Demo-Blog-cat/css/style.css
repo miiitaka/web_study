@@ -134,14 +134,33 @@ main {
   border: 2px dashed #eda1a1;
   box-shadow: 0 0 0 5px #e38787;
 }
-ul li::before {
+
+.pagination {
+  display: flex;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 1.5rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.pagination a:hover {
   background: #93d8d0;
+  color: #fff;
+}
+
+.pagination a,
+.pagination .current {
   border-radius: 50%;
   display: inline-block;
-  content: "";
-  height: 8px;
-  margin: 0 8px 2px 0;
-  width: 8px;
+  height: 36px;
+  margin: 0 6px;
+  padding-top: 4px;
+  width: 36px;
+}
+
+.pagination .current {
+  background: #ccc;
+  color: #fff;
 }
 
 .side-box {
@@ -185,6 +204,16 @@ ul li::before {
   border-bottom: 1px dashed #ccc;
   display: flex;
   padding: 1rem .35rem;
+}
+
+.side-box li::before {
+  background: #93d8d0;
+  border-radius: 50%;
+  display: inline-block;
+  content: "";
+  height: 8px;
+  margin: 0 8px 2px 0;
+  width: 8px;
 }
 
 .side-box li:first-child {
@@ -239,6 +268,35 @@ ul li::before {
 
 .newsletter-form input[type='submit']:hover {
   background: #e38787;
+}
+
+footer {
+  background: #949087;
+  padding: 3rem;
+  text-align: center;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+footer li {
+  margin: 0 12px;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #c7c3ba;
+}
+
+footer small {
+  color: #c7c3ba;
+  font-size: .875rem;
 }
 
 @media (min-width: 600px) {
