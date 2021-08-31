@@ -319,4 +319,8 @@ footer small {
     height: 180px;
     width: 220px;
   }
+  .popular-posts {
+    position: sticky;
+    top: 1rem;
+  }
 }
