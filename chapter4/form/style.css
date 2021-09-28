@@ -1,0 +1,21 @@
+input[type='email']::placeholder {
+  color: #f00;
+}
+
+input[type='checkbox'] {
+  appearance: none;
+  -webkit-appearance: none;
+  opacity: 0;
+  position: absolute;
+}
+
+input[type='checkbox'] + span::before {
+  background: #fff;
+  border: solid 1px #bbb;
+  content: '';
+  display: inline-block;
+  height: 1.5rem;
+  margin: -.125rem .5rem 0 0;
+  vertical-align: middle;
+  width: 1.5rem;
+}
